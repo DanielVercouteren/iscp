@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+### Author: Daniël Vercouteren
+
 import sqlite3 as lite
 
 dbConn = lite.connect('tweets.db')

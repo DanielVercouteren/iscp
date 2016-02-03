@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+### Author: Daniël Vercouteren
+
 import tweepy
 from tweepy import Stream
 from tweepy.streaming import StreamListener
@@ -18,11 +20,10 @@ auth = tweepy.OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 
 #Aantal te behandelen tweets + filter
-filter = 'shit'
-aantalTweets = 100
+filter = 'Trump'
+aantalTweets = 10000
 
 class MyListener(StreamListener):
-    DatabaseNieuw.createTweetsDatabase()
     def on_data(self, data):
         fullData = json.loads(data)
         try:

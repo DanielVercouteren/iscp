@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+### Author: Daniël Vercouteren
+
 import sys
 import Woordenlijst
 import DatabaseNieuw
@@ -45,6 +48,3 @@ def scoring(tweetScore, tweetNummer):
         print("neutraal")
         DatabaseNieuw.setAnalysis(tweetNummer, '1')
 
-    if(tweetNummer == DatabaseNieuw.getAantalTweets()):
-        InterfaceNieuw.createBarchart()
-        InterfaceNieuw.createTimechart()
